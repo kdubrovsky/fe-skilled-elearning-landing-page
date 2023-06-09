@@ -1,6 +1,17 @@
 @use "colors";
 
-.containter {
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.556; //28
+    color: colors.$gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
     width: 1110px;
 }
 
@@ -15,12 +26,4 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-body {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.556; //28
-    color: colors.$gray;
 }
