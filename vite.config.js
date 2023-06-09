@@ -6,8 +6,7 @@ import { svgSpritemap } from 'vite-plugin-svg-spritemap';
 export default defineConfig({
     plugins: [
         svgSpritemap({
-            pattern: 'icons/**/*.svg',
-            prefix: 'icon',
+            pattern: 'svg/**/*.svg'
         })
     ],
 })

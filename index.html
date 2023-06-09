@@ -19,8 +19,12 @@
     <header class="header">
         <div class="container">
             <h1 class="visually-hidden">Skilled modern courses</h1>
-            <img class="logo logo--black" src="images/logo.svg" alt="Skilled logotype">
-            <button class="btn btn--secondary">Get Started</button>
+            <div class="header__wrapper">
+                <svg height="32" width="112" class="logo logo--dark">
+                    <use xlink:href="spritemap.svg#logo"></use>
+                </svg>
+                <button class="btn btn--secondary">Get Started</button>
+            </div>
         </div>
     </header>
     <main>
@@ -78,8 +82,10 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <img class="logo logo--white" src="images/logo.svg" alt="Skilled logotype">
-            <button class="btn btn--secondary">Get Started</button>
+            <svg height="32" width="112" class="logo logo--light">
+                <use xlink:href="spritemap.svg#logo"></use>
+            </svg>
+            <button class="btn btn--secondary dark-background">Get Started</button>
         </div>
     </footer>
 </body>
