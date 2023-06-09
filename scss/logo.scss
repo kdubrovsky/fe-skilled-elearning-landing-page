@@ -1,0 +1,10 @@
+@use "colors";
+
+.logo {
+    &--dark {
+        color: colors.$quite-black;
+    }
+    &--light {
+        color: colors.$white;
+    }
+}

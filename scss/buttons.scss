@@ -1,0 +1,32 @@
+@use "colors";
+
+.btn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: colors.$white;
+    cursor: pointer;
+
+    &--primary {
+        padding: 19px 32px 16px;
+        border-radius: 31.5px;
+        background-image: colors.$primary-gradient;
+        &:hover {
+            background-image: colors.$primary-gradient-hover;
+        }
+    }
+    &--secondary {
+        padding: 14px 32px;
+        border-radius: 28px;
+        background-color: colors.$quite-black;
+        &:hover {
+            background-color: colors.$violet;
+        }
+        &.dark-background {
+            background-image: colors.$secondary-gradient;
+            &:hover {
+                background-image: colors.$secondary-gradient-hover;
+            }
+        }
+    }
+}
