@@ -1,0 +1,19 @@
+@use "../colors";
+
+.hero {
+    margin-top: 148px;
+    margin-bottom: 250px;
+
+    &__title {
+        font-size: 56px;
+        line-height: 1.268;
+        color: colors.$quite-black;
+        width: 470px;
+        padding-bottom: 29px;
+        letter-spacing: 0.006em;
+    }
+    &__description {
+        width: 445px;
+        padding-bottom: 40px;
+    }
+}
