@@ -5,6 +5,11 @@
     background-color: colors.$quite-black;
     padding: 32px 0;
 
+    @media (max-width: 783px) {
+        padding: 36px 0;
+    }
+
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
