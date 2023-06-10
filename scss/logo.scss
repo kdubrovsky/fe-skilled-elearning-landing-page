@@ -1,6 +1,14 @@
 @use "colors";
 
 .logo {
+    width: 112px;
+    height: 32px;
+
+    @media (max-width: 783px) {
+        width: 88px;
+        height: 25px;
+    }
+
     &--dark {
         color: colors.$quite-black;
     }
