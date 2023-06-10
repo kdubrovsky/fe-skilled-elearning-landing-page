@@ -1,0 +1,13 @@
+@use "../colors";
+
+.footer {
+    width: 100%;
+    background-color: colors.$quite-black;
+    padding: 32px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
