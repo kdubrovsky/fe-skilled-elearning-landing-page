@@ -7,7 +7,7 @@
     color: colors.$white;
     cursor: pointer;
 
-    @media (max-width: 783px) {
+    @media (max-width: 960px) {
         font-size: 16px;
     }
 
@@ -16,7 +16,7 @@
         border-radius: 31.5px;
         background-image: colors.$primary-gradient;
 
-        @media (max-width: 783px) {
+        @media (max-width: 960px) {
             padding: 14px 38px;
         }
 
@@ -29,7 +29,7 @@
         border-radius: 28px;
         background-color: colors.$quite-black;
 
-        @media (max-width: 783px) {
+        @media (max-width: 960px) {
             padding: 9px 24px 11px;
         }
 
