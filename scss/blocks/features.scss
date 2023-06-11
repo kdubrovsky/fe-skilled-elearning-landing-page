@@ -3,13 +3,33 @@
 .features {
     margin-bottom: 140px;
 
+    @media (max-width: 960px) {
+        margin-bottom: 86px;
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 80px;
+    }
+
     &__title {
         color: colors.$white;
         font-size: 32px;
         line-height: 1.25;
+        font-weight: 800;
         background-image: colors.$primary-gradient;
         border-radius: 15px;
         padding: 64px 32px 40px;
+
+        @media (max-width: 960px) {
+            font-size: 24px;
+            line-height: 1.333;
+            padding: 56px 22px 32px 32px;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 480px) {
+            padding: 24px 28px 32px;
+        }
     }
 
     &__grid-wrapper {
@@ -17,6 +37,17 @@
         grid-template-columns: repeat(3, 1fr);
         row-gap: 80px;
         column-gap: 30px;
+
+        @media (max-width: 960px) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 11px;
+            row-gap: 56px;
+        }
+
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
     }
 
     &__item {
@@ -28,13 +59,28 @@
         background-color: colors.$white;
         box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
         position: relative;
+
+        @media (max-width: 960px) {
+            border-radius: 10px;
+            padding: 56px 21px 32px 32px;
+        }
+
+        @media (max-width: 480px) {
+            padding: 56px 28px 28px 32px;
+        }
     }
 
     &__item-title {
         font-size: 24px;
+        font-weight: 800;
         line-height: 1.25;
         margin-bottom: 24px;
         color: colors.$quite-black;
+
+        @media (max-width: 960px) {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
     }
 
     &__item-description {
@@ -45,6 +91,7 @@
     &__item-link:visited {
         align-self: flex-start;
         font-weight: 600;
+        font-size: 18px;
         text-decoration: none;
         color: colors.$red;
         &:hover {

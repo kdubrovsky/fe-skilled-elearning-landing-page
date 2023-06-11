@@ -4,16 +4,51 @@
     margin-top: 148px;
     margin-bottom: 250px;
 
+    @media (max-width: 960px) {
+        margin-top: 75px;
+        margin-bottom: 210px;
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 22px;
+        margin-bottom: 66px;
+    }
+
     &__title {
         font-size: 56px;
         line-height: 1.268;
         color: colors.$quite-black;
-        width: 470px;
+        width: 60%;
         padding-bottom: 29px;
         letter-spacing: 0.006em;
+
+        @media (max-width: 960px) {
+            font-size: 40px;
+            line-height: 1.25;
+            width: 70%;
+            padding-bottom: 26px;
+        }
+
+        @media (max-width: 480px) {
+            font-size: 40px;
+            line-height: 1.25;
+            width: 100%;
+            padding-bottom: 26px;
+        }
     }
+
     &__description {
         width: 445px;
         padding-bottom: 40px;
+        width: 60%;
+
+        @media (max-width: 960px) {
+            width: 70%;
+            padding-bottom: 24px;
+        }
+
+        @media (max-width: 480px) {
+            width: 100%;
+        }
     }
 }
