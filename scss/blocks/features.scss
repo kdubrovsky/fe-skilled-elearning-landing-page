@@ -1,14 +1,15 @@
 @use "../colors";
 
 .features {
-    margin-bottom: 140px;
+    padding-bottom: 140px;
+    background-image: colors.$background-gradient;
 
     @media (max-width: 960px) {
-        margin-bottom: 86px;
+        padding-bottom: 86px;
     }
 
     @media (max-width: 480px) {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 
     &__title {
